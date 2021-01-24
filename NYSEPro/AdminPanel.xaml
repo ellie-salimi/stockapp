@@ -1,0 +1,39 @@
+﻿<Window x:Name="AdminPanel" x:Class="NYSEPro.Admin_Panel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NYSEPro"
+        mc:Ignorable="d"
+        Title="Admin Panel" Height="652" Width="806" Loaded="AdminPanel_Loaded">
+
+    <Grid>
+        <Label x:Name="StId" Content="Stock Code" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,24,0,0"/>
+        <TextBox x:Name="StIdTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,24,0,0"/>
+        <Label x:Name="StSymbol" Content="Stock Symbol " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="273,24,0,0"/>
+        <TextBox x:Name="StSymbolTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="368,24,0,0"/>
+        <Label x:Name="StPriceOpen" Content="Stock Price Open" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="511,24,0,0"/>
+        <TextBox x:Name="StPriceOpenTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="655,24,0,0"/>
+        <Label x:Name="StPriceClose" Content="Stock Price Close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,69,0,0"/>
+        <TextBox x:Name="StPriceCloseTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="114,69,0,0"/>
+        <Label x:Name="StPriceHigh" Content="Stock Price High" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,66,0,0"/>
+        <TextBox x:Name="StPriceHighTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="368,69,0,0"/>
+        <Label x:Name="StPriceLow" Content="Stock Price Low " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="516,72,0,0"/>
+        <TextBox x:Name="StPriceLowTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="655,72,0,0"/>
+        <Label x:Name="StPriceAdjClose" Content="Stock Price Adjust Close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="511,113,0,0"/>
+        <TextBox x:Name="StPriceAdjCloseTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="655,116,0,0"/>
+        <Label x:Name="StVolume" Content="Stock Volume" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,116,0,0"/>
+        <TextBox x:Name="StVolumeTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="114,116,0,0"/>
+        <Label x:Name="StExchange" Content="Stock Exchange " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,116,0,0"/>
+        <TextBox x:Name="StExchangeTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="368,116,0,0"/>
+        <Label x:Name="StDate" Content="Stock Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,156,0,0"/>
+        <DatePicker x:Name="StockDatePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114,158,0,0"/>
+        <DataGrid x:Name="AdminDataGrid" HorizontalAlignment="Left" Height="386" VerticalAlignment="Top" Width="775" Margin="13,208,0,0" SelectionChanged="AdminDataGrid_SelectionChanged"/>
+        <Button x:Name="AddBtn" Content="Add New Stock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="107" Margin="260,160,0,0" Click="AddBtn_Click"/>
+        <Button x:Name="DelBtn" Content="Delete Selected Stock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Margin="388,159,0,0" Click="DelBtn_Click_1"/>
+        <Button x:Name="UpdateBtn" Content="Update Selected Stock" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="533,159,0,0" Click="UpdateBtn_Click"/>
+        <Button x:Name="HelpBtn" Content="Help" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Margin="684,159,0,0"/>
+        <TextBox x:Name="DateTxt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,187,0,0"/>
+    </Grid>
+
+</Window>
